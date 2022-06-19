@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+
+<body class="home">
+  <%- include ("../partials/nav.ejs") %>
+
+  <div class="jumbotron questions">
+      <div class="text-center">
+        <h2 id="l-28" class="display-4">Questionnarie</h2>
+      </div>
+  </div>
+
+  <form action="/submit" method="post">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="group-1">
+          <!-- Question 1-->
+          <section>
+            <h4 id="l-29"><strong>1. To which gender do you most identify?</strong></h4>
+            <div class="radio">
+              <label>
+                <input id="l-30" type="radio" name="1" id="optionsRadios1" value="female" >
+                Female
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-31" type="radio" name="1" id="optionsRadios1" value="male">
+                Male
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-32" type="radio" name="1" id="optionsRadios1" value="other">
+                Others
+              </label>
+            </div>
+          </section>
+
+          <!-- Question 2 -->
+          <section>
+            <h4 id="l-33"><strong>2. Choose your age group?</strong></h4>
+            <div class="radio">
+              <label>
+                <input id="l-34" type="radio" name="2" id="optionsRadios1" value="12" >
+                10–19 years old
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-35" type="radio" name="2" id="optionsRadios1" value="18">
+                20–29 years old
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-36" type="radio" name="2" id="optionsRadios1" value="25">
+                30–39 years old
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-37" type="radio" name="2" id="optionsRadios1" value="35">
+                40 - 49 years old
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-38" type="radio" name="2" id="optionsRadios1" value="45">
+                50 - 59 years old
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-39" type="radio" name="2" id="optionsRadios1" value="55">
+                60 - 69 years old
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="l-40" type="radio" name="2" id="optionsRadios1" value="65">
+                70+ years old
+              </label>
+            </div>
+          </section>
+
+          <!-- Question 3 -->
+          <section>
+            <h4 id="l-41"><strong>3. Please, choose your nationality</strong></h4>
+            <select name="3">
+              <option value="afghan">Afghan</option>
+              <option value="albanian">Albanian</option>
+              <option value="algerian">Algerian</option>
+              <option value="american">American</option>
+              <option value="andorran">Andorran</option>
+              <option value="angolan">Angolan</option>
+              <option value="antiguans">Antiguans</option>
+              <option value="argentinean">Argentinean</option>
+              <option value="armenian">Armenian</option>
+              <option value="australian">Australian</option>
+              <option value="austrian">Austrian</option>
+              <option value="azerbaijani">Azerbaijani</option>
+              <option value="bahamian">Bahamian</option>
+              <option value="bahraini">Bahraini</option>
+              <option value="bangladeshi">Bangladeshi</option>
+              <option value="barbadian">Barbadian</option>
+              <option value="barbudans">Barbudans</option>
+              <option value="batswana">Batswana</option>
+              <option value="belarusian">Belarusian</option>
+              <option value="belgian">Belgian</option>
+              <option value="belizean">Belizean</option>
+              <option value="beninese">Beninese</option>
+              <option value="bhutanese">Bhutanese</option>
+              <option value="bolivian">Bolivian</option>
+              <option value="bosnian">Bosnian</option>
+              <option value="brazilian">Brazilian</option>
+              <option value="british">British</option>
+              <option value="bruneian">Bruneian</option>
+              <option value="bulgarian">Bulgarian</option>
+              <option value="burkinabe">Burkinabe</option>
+              <option value="burmese">Burmese</option>
+              <option value="burundian">Burundian</option>
+              <option value="cambodian">Cambodian</option>
+              <option value="cameroonian">Cameroonian</option>
+              <option value="canadian">Canadian</option>
+              <option value="cape verdean">Cape Verdean</option>
+              <option value="central african">Central African</option>
+              <option value="chadian">Chadian</option>
+              <option value="chilean">Chilean</option>
+              <option value="chinese">Chinese</option>
+              <option value="colombian">Colombian</option>
+              <option value="comoran">Comoran</option>
+              <option value="congolese">Congolese</option>
+              <option value="costa rican">Costa Rican</option>
+              <option value="croatian">Croatian</option>
+              <option value="cuban">Cuban</option>
+              <option value="cypriot">Cypriot</option>
+              <option value="czech">Czech</option>
+              <option value="danish">Danish</option>
+              <option value="djibouti">Djibouti</option>
+              <option value="dominican">Dominican</option>
+              <option value="dutch">Dutch</option>
+              <option value="east timorese">East Timorese</option>
+              <option value="ecuadorean">Ecuadorean</option>
+              <option value="egyptian">Egyptian</option>
+              <option value="emirian">Emirian</option>
+              <option value="equatorial guinean">Equatorial Guinean</option>
+              <option value="eritrean">Eritrean</option>
+              <option value="estonian">Estonian</option>
+              <option value="ethiopian">Ethiopian</option>
+              <option value="fijian">Fijian</option>
+              <option value="filipino">Filipino</option>
+              <option value="finnish">Finnish</option>
+              <option value="french">French</option>
+              <option value="gabonese">Gabonese</option>
+              <option value="gambian">Gambian</option>
+              <option value="georgian">Georgian</option>
+              <option value="german">German</option>
+              <option value="ghanaian">Ghanaian</option>
+              <option value="greek">Greek</option>
+              <option value="grenadian">Grenadian</option>
+              <option value="guatemalan">Guatemalan</option>
+              <option value="guinea-bissauan">Guinea-Bissauan</option>
+              <option value="guinean">Guinean</option>
+              <option value="guyanese">Guyanese</option>
+              <option value="haitian">Haitian</option>
+              <option value="herzegovinian">Herzegovinian</option>
+              <option value="honduran">Honduran</option>
+              <option value="hungarian">Hungarian</option>
+              <option value="icelander">Icelander</option>
+              <option value="indian">Indian</option>
+              <option value="indonesian">Indonesian</option>
+              <option value="iranian">Iranian</option>
+              <option value="iraqi">Iraqi</option>
+              <option value="irish">Irish</option>
+              <option value="israeli">Israeli</option>
+              <option value="italian">Italian</option>
+              <option value="ivorian">Ivorian</option>
+              <option value="jamaican">Jamaican</option>
+              <option value="japanese">Japanese</option>
+              <option value="jordanian">Jordanian</option>
+              <option value="kazakhstani">Kazakhstani</option>
+              <option value="kenyan">Kenyan</option>
+              <option value="kittian and nevisian">Kittian and Nevisian</option>
+              <option value="kuwaiti">Kuwaiti</option>
+              <option value="kyrgyz">Kyrgyz</option>
+              <option value="laotian">Laotian</option>
+              <option value="latvian">Latvian</option>
+              <option value="lebanese">Lebanese</option>
+              <option value="liberian">Liberian</option>
+              <option value="libyan">Libyan</option>
+              <option value="liechtensteiner">Liechtensteiner</option>
+              <option value="lithuanian">Lithuanian</option>
+              <option value="luxembourger">Luxembourger</option>
+              <option value="macedonian">Macedonian</option>
+              <option value="malagasy">Malagasy</option>
+              <option value="malawian">Malawian</option>
+              <option value="malaysian">Malaysian</option>
+              <option value="maldivan">Maldivan</option>
+              <option value="malian">Malian</option>
+              <option value="maltese">Maltese</option>
+              <option value="marshallese">Marshallese</option>
+              <option value="mauritanian">Mauritanian</option>
+              <option value="mauritian">Mauritian</option>
+              <option value="mexican">Mexican</option>
+              <option value="micronesian">Micronesian</option>
+              <option value="moldovan">Moldovan</option>
+              <option value="monacan">Monacan</option>
+              <option value="mongolian">Mongolian</option>
+              <option value="moroccan">Moroccan</option>
+              <option value="mosotho">Mosotho</option>
+              <option value="motswana">Motswana</option>
+              <option value="mozambican">Mozambican</option>
+              <option value="namibian">Namibian</option>
+              <option value="nauruan">Nauruan</option>
+              <option value="nepalese">Nepalese</option>
+              <option value="new zealander">New Zealander</option>
+              <option value="ni-vanuatu">Ni-Vanuatu</option>
+              <option value="nicaraguan">Nicaraguan</option>
+              <option value="nigerien">Nigerien</option>
+              <option value="north korean">North Korean</option>
+              <option value="northern irish">Northern Irish</option>
+              <option value="norwegian">Norwegian</option>
+              <option value="omani">Omani</option>
+              <option value="pakistani">Pakistani</option>
+              <option value="palauan">Palauan</option>
+              <option value="panamanian">Panamanian</option>
+              <option value="papua new guinean">Papua New Guinean</option>
+              <option value="paraguayan">Paraguayan</option>
+              <option value="peruvian">Peruvian</option>
+              <option value="polish">Polish</option>
+              <option value="portuguese">Portuguese</option>
+              <option value="qatari">Qatari</option>
+              <option value="romanian">Romanian</option>
+              <option value="russian">Russian</option>
+              <option value="rwandan">Rwandan</option>
+              <option value="saint lucian">Saint Lucian</option>
+              <option value="salvadoran">Salvadoran</option>
+              <option value="samoan">Samoan</option>
+              <option value="san marinese">San Marinese</option>
+              <option value="sao tomean">Sao Tomean</option>
+              <option value="saudi">Saudi</option>
+              <option value="scottish">Scottish</option>
+              <option value="senegalese">Senegalese</option>
+              <option value="serbian">Serbian</option>
+              <option value="seychellois">Seychellois</option>
+              <option value="sierra leonean">Sierra Leonean</option>
+              <option value="singaporean">Singaporean</option>
+              <option value="slovakian">Slovakian</option>
+              <option value="slovenian">Slovenian</option>
+              <option value="solomon islander">Solomon Islander</option>
+              <option value="somali">Somali</option>
+              <option value="south african">South African</option>
+              <option value="south korean">South Korean</option>
+              <option value="spanish">Spanish</option>
+              <option value="sri lankan">Sri Lankan</option>
+              <option value="sudanese">Sudanese</option>
+              <option value="surinamer">Surinamer</option>
+              <option value="swazi">Swazi</option>
+              <option value="swedish">Swedish</option>
+              <option value="swiss">Swiss</option>
+              <option value="syrian">Syrian</option>
+              <option value="taiwanese">Taiwanese</option>
+              <option value="tajik">Tajik</option>
+              <option value="tanzanian">Tanzanian</option>
+              <option value="thai">Thai</option>
+              <option value="togolese">Togolese</option>
+              <option value="tongan">Tongan</option>
+              <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+              <option value="tunisian">Tunisian</option>
+              <option value="turkish">Turkish</option>
+              <option value="tuvaluan">Tuvaluan</option>
+              <option value="ugandan">Ugandan</option>
+              <option value="ukrainian">Ukrainian</option>
+              <option value="uruguayan">Uruguayan</option>
+              <option value="uzbekistani">Uzbekistani</option>
+              <option value="venezuelan">Venezuelan</option>
+              <option value="vietnamese">Vietnamese</option>
+              <option value="welsh">Welsh</option>
+              <option value="yemenite">Yemenite</option>
+              <option value="zambian">Zambian</option>
+              <option value="zimbabwean">Zimbabwean</option>
+            </select>
+          </section>
+
+          <!-- Question 4 -->
+          <section>
+            <p id="l-42" class="note">This experience is based on an exhibition in the Museum of the History of Barcelona (MUHBA).</p>
+            <h4 id="l-43"><strong>4. Have you ever been to this museum exhibit?</strong></h4>
+            <div class="radio">
+              <label>
+                <input id="l-44" type="radio" name="4" id="optionsRadios1" value="yes" >
+                yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="4" id="optionsRadios1" value="no">
+                no
+              </label>
+            </div>
+          </section>
+
+          <!-- Question 5 -->
+          <section>
+            <h4 id="l-45"><strong>5. Have you ever been to an interactive museum?</strong></h4>
+            <p id="l-46" class="note">A Museum with interactive exhibits let their visitors engage with the items and activities on display
+              or interact with the contents. Instead of just simply reading the information posted, visitors are
+              able to participate actively through hands-on experience.</p>
+            <div class="radio">
+              <label>
+                <input id="l-47" type="radio" name="5" id="optionsRadios1" value="yes" >
+                yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="5" id="optionsRadios1" value="no">
+                no
+              </label>
+            </div>
+          </section>
+
+          <!-- Question 6 -->
+          <section>
+            <h4 id="l-48"><strong>6.Have you been a participant in a study that used a similar device?</strong></h4>
+            <div class="radio">
+              <label>
+                <input id="l-49" type="radio" name="6" id="optionsRadios1" value="yes" >
+                yes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="6" id="optionsRadios1" value="no">
+                no
+              </label>
+            </div>
+          </section>
+        </div>
+
+        <div class="group-2">
+          <!-- Question 7 -->
+          <section>
+            <h4 id="l-50"><strong>7. What is your preference about museums?</strong></h4>
+            <p id="l-51"><strong>7.1 I am interested in history</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-52" type="radio" name="7" id="inlineRadio1" value="1" ><span>1</span><span>Not interested at all</span>
+              </label>
+              <label>
+                <input id="l-53" type="radio" name="7" id="inlineRadio2" value="2"> <span>2</span> <span>Somewhat interested</span>
+              </label>
+              <label>
+                <input id="l-54" type="radio" name="7" id="inlineRadio3" value="3"> <span>3</span> <span>Fairly interested</span>
+              </label>
+              <label>
+                <input id="l-55" type="radio" name="7" id="inlineRadio2" value="4"> <span>4</span> <span>Very interested</span>
+              </label>
+              <label>
+                <input id="l-56" type="radio" name="7" id="inlineRadio3" value="5"> <span>5</span> <span>Hardly interested</span>
+              </label>
+            </div>
+            <p id="l-57"><strong>7.2 I am interested in archaelogy</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-58"type="radio" name="8" id="inlineRadio1" value="1" ><span>1</span><span>Not interested at all</span>
+              </label>
+              <label>
+                <input id="l-59" type="radio" name="8" id="inlineRadio2" value="2"> <span>2</span> <span>Somewhat interested</span>
+              </label>
+              <label>
+                <input id="l-60" type="radio" name="8" id="inlineRadio3" value="3"> <span>3</span> <span>Fairly interested</span>
+              </label>
+              <label>
+                <input id="l-61" type="radio" name="8" id="inlineRadio2" value="4"> <span>4</span> <span>Very interested</span>
+              </label>
+              <label>
+                <input id="l-62" type="radio" name="8" id="inlineRadio3" value="5"> <span>5</span> <span>Hardly interested</span>
+              </label>
+            </div>
+            <p id="l-63"><strong>7.3 When I go to museums or other cultural heritage sites, I like to have a tour guide.</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-64" type="radio" name="9" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+              </label>
+              <label>
+                <input id="l-65" type="radio" name="9" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+              </label>
+              <label>
+                <input id="l-66" type="radio" name="9" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+              </label>
+              <label>
+                <input id="l-67" type="radio" name="9" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+              </label>
+              <label>
+                <input id="l-68" type="radio" name="9" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+              </label>
+            </div>
+            <p id="l-69"><strong>7.4 When I go to museums or other cultural heritage sites, I would like to interact using different devices..</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-70" type="radio" name="10" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+              </label>
+              <label>
+                <input id="l-71" type="radio" name="10" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+              </label>
+              <label>
+                <input id="l-72" type="radio" name="10" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+              </label>
+              <label>
+                <input id="l-73" type="radio" name="10" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+              </label>
+              <label>
+                <input id="l-74" type="radio" name="10" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- Question 8 -->
+          <h4 id="l-75"><strong>8. During your visit to Barcino, you held a special device that let you see into the past.</strong></h4>
+          <p id="l-76"><strong>8.1 I liked exploring the Barcino ruins with a device that let me see augmented content from the past.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-77" type="radio" name="11" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-78" type="radio" name="11" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-79" type="radio" name="11" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-80" type="radio" name="11" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-81" type="radio" name="11" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-82"><strong>8.2 I like the idea of using this kind of device that adds augmented imagery to a historical site during a visit.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-83" type="radio" name="12" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-84" type="radio" name="12" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-85" type="radio" name="12" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-86" type="radio" name="12" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-87" type="radio" name="12" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-88"><strong>8.3 I would like to try using the technology in visits to other heritage sites or museums.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-89" type="radio" name="13" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-90" type="radio" name="13" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-91" type="radio" name="13" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-92" type="radio" name="13" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-93" type="radio" name="13" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-94"><strong>8.4 The device was a useful mechanism to help me look for augmented objects.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-95" type="radio" name="14" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-96" type="radio" name="14" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-97" type="radio" name="14" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-98" type="radio" name="14" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-99" type="radio" name="14" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-100"><strong>8.5 I could easily move the device to explore the full size of the augmented objects found.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-101" type="radio" name="15" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-102" type="radio" name="15" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-103" type="radio" name="15" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-104" type="radio" name="15" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-105" type="radio" name="15" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-106"><strong>8.6 I found natural the interaction between the augmented content and the environment.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-107" type="radio" name="16" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-108" type="radio" name="16" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-109" type="radio" name="16" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-110" type="radio" name="16" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-111" type="radio" name="16" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-112"><strong>8.7 I found the idea of holding a device to be adequate in the exploration activities.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-113" type="radio" name="17" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-114" type="radio" name="17" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-115" type="radio" name="17" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-116" type="radio" name="17" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-117" type="radio" name="17" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+        </div>
+        <div class="group-3">
+          <p id="l-118"><strong>8.8 Using this device distracts me and shifts my focus away from the museum.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-119" type="radio" name="18" id="inlineRadio1" value="1" ><span>1</span><span>Not interested at all</span>
+            </label>
+            <label>
+              <input id="l-120" type="radio" name="18" id="inlineRadio2" value="2"> <span>2</span> <span>Somewhat interested</span>
+            </label>
+            <label>
+              <input id="l-121" type="radio" name="18" id="inlineRadio3" value="3"> <span>3</span> <span>Fairly interested</span>
+            </label>
+            <label>
+              <input id="l-122" type="radio" name="18" id="inlineRadio2" value="4"> <span>4</span> <span>Very interested</span>
+            </label>
+            <label>
+              <input id="l-123" type="radio" name="18" id="inlineRadio3" value="5"> <span>5</span> <span>Hardly interested</span>
+            </label>
+          </div>
+          <p id="l-124"><strong>8.9 When using this device I felt present in the mix of the physical environment, digital objects
+            and characters.</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-125" type="radio" name="19" id="inlineRadio1" value="1" ><span>1</span><span>Not interested at all</span>
+              </label>
+              <label>
+                <input id="l-126" type="radio" name="19" id="inlineRadio2" value="2"> <span>2</span> <span>Somewhat interested</span>
+              </label>
+              <label>
+                <input id="l-127" type="radio" name="19" id="inlineRadio3" value="3"> <span>3</span> <span>Fairly interested</span>
+              </label>
+              <label>
+                <input id="l-128" type="radio" name="19" id="inlineRadio2" value="4"> <span>4</span> <span>Very interested</span>
+              </label>
+              <label>
+                <input id="l-129" type="radio" name="19" id="inlineRadio3" value="5"> <span>5</span> <span>Hardly interested</span>
+              </label>
+            </div>
+          <p id="l-130"><strong>8.10 As a device holder, I was able to visit without distraction.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-131" type="radio" name="20" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-132" type="radio" name="20" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-133" type="radio" name="20" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-134" type="radio" name="20" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-135" type="radio" name="20" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-136"><strong>8.11 How was your emotion as device holder?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-137" type="radio" name="21" id="inlineRadio1" value="1" ><span>1</span><span>Sad</span>
+            </label>
+            <label>
+              <input id="l-138" type="radio" name="21" id="inlineRadio2" value="2"><span>2</span><span>Bored</span>
+            </label>
+            <label>
+              <input id="l-139" type="radio" name="21" id="inlineRadio3" value="3"><span>3</span><span>Neutral</span>
+            </label>
+            <label>
+              <input id="l-140" type="radio" name="21" id="inlineRadio2" value="4"><span>4</span><span>Motivated</span>
+            </label>
+            <label>
+              <input id="l-141" type="radio" name="21" id="inlineRadio3" value="5"><span>5</span><span>Excited</span>
+            </label>
+          </div>
+          <p id="l-142"><strong>8.12 I like exploring the remains of Barcino using the device.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-143" type="radio" name="22" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-144" type="radio" name="22" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-145" type="radio" name="22" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-146" type="radio" name="22" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-147" type="radio" name="22" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-148"><strong>8.13 I like how the device augments the physical space with the digital content.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-149" type="radio" name="23" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-150" type="radio" name="23" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-151" type="radio" name="23" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-152" type="radio" name="23" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-153" type="radio" name="23" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-154"><strong>8.14 I had fun during the augmented reality visit.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-155" type="radio" name="24" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-156" type="radio" name="24" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-157" type="radio" name="24" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-158" type="radio" name="24" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-159" type="radio" name="24" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-160"><strong>8.15 I believe the visit creates a sociable experience.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-161" type="radio" name="25" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-162" type="radio" name="25" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-163" type="radio" name="25" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-164" type="radio" name="25" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-165" type="radio" name="25" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-166"><strong>8.16 I would recommend the device for educational and tourism purposes.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-167" type="radio" name="26" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-168" type="radio" name="26" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-169" type="radio" name="26" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-170" type="radio" name="26" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-171" type="radio" name="26" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-172"><strong>8.17 It was easy to use the device.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-173" type="radio" name="27" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-174" type="radio" name="27" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-175" type="radio" name="27" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-176" type="radio" name="27" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-177" type="radio" name="27" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-178"><strong>8.18 Adding the digital content to the physical remains added value to my visit.</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-179" type="radio" name="28" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-180" type="radio" name="28" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-181" type="radio" name="28" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-182" type="radio" name="28" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-183" type="radio" name="28" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-184"><strong>8.19 If I were in a group of five visitors, where we all hold our own device,
+            I would feel connected to the others.</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-185" type="radio" name="29" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+              </label>
+              <label>
+                <input id="l-186" type="radio" name="29" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+              </label>
+              <label>
+                <input id="l-187" type="radio" name="29" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+              </label>
+              <label>
+                <input id="l-188" type="radio" name="29" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+              </label>
+              <label>
+                <input id="l-189" type="radio" name="29" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+              </label>
+            </div>
+          <p id="l-190"><strong>8.20 If I were in a group of five visitors,where there is only one device holder,
+            I would feel left out of the experience.</strong></p>
+            <div class="col5">
+              <label>
+                <input id="l-191" type="radio" name="30" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+              </label>
+              <label>
+                <input id="l-192" type="radio" name="30" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+              </label>
+              <label>
+                <input id="l-193" type="radio" name="30" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+              </label>
+              <label>
+                <input id="l-194" type="radio" name="30" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+              </label>
+              <label>
+                <input id="l-195" type="radio" name="30" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+              </label>
+            </div>
+        </div>
+        <div class="group-4">
+          <p id="l-196"><strong>8.21 Do you think the time of your experience during the visit using the device was sufficent?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-197" type="radio" name="31" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-198" type="radio" name="31" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-199" type="radio" name="31" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-200" type="radio" name="31" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-201" type="radio" name="31" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+
+          <p id="l-202"><strong>8.22 Do you think the device helps you better understand the content of ancient time?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-203" type="radio" name="32" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-204" type="radio" name="32" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-205" type="radio" name="32" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-206" type="radio" name="32" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-207" type="radio" name="32" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+
+          <p id="l-208"><strong>8.23 During the visit, you walked through multiple locations related to the ancient culture. Which places do you remember?</strong></p>
+          <p id="l-209" class="note">NOTE: Choose all relevant answers for questions numbers 8.23 - 8.25.</p>
+          <div class="checkbox">
+            <label>
+              <input id="l-210" class="single-checkbox" type="checkbox" id="blankCheckbox" value="forum" name="33"> Forum
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-211" class="single-checkbox" type="checkbox" id="blankCheckbox" value="garum" name="33"> Library
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-212" class="single-checkbox" type="checkbox" id="blankCheckbox" value="laundry" name="33"> Laundry or Fullonica
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-213" class="single-checkbox" type="checkbox" id="blankCheckbox" value="library" name="33"> Garum
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-214" class="single-checkbox" type="checkbox" id="blankCheckbox" value="roman_baths" name="33"> Roman baths
+            </label>
+          </div>
+          <p id="l-215"><strong>8.24 While walking through the cultural heritage site, you found some interactive activities. What actions did you execute?</strong></p>
+          <div class="checkbox">
+            <label>
+              <input id="l-216" class="single-checkbox2" type="checkbox" id="blankCheckbox" value="grab" name="34"> Grab
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-217" class="single-checkbox2" type="checkbox" id="blankCheckbox" value="hang" name="34"> Zoom
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-218" class="single-checkbox2" type="checkbox" id="blankCheckbox" value="release" name="34"> Release
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-219" class="single-checkbox2" type="checkbox" id="blankCheckbox" value="explore" name="34"> Explore
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-220" class="single-checkbox2" type="checkbox" id="blankCheckbox" value="zoom" name="34"> Hang
+            </label>
+          </div>
+          <p id="l-221" class="note">During your visit to the museum, you have seen some representative elements from the Barcino culture.</p>
+          <p id="l-222"><strong>8.25 Choose the material you discovered during your visit?</strong></p>
+          <div class="checkbox">
+            <label>
+              <input id="l-223" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="person" name="35"> A person
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-224" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="stick_clothes" name="35"> Stick/ to string the cloths
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-225" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="fish" name="35"> Fish
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-226" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="pot" name="35"> Pot (dolium)
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-227" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="stick_garum" name="35"> Stick to prepare Garum sauce
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-228" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="salt" name="35"> Salt
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="l-229" class="single-checkbox3" type="checkbox" id="blankCheckbox" value="herbs" name="35"> Herbs
+            </label>
+          </div>
+        
+          <p id="l-230"><strong>8.26 How many ingredients were required to prepare the Garum sauce?</strong></p>
+          <select name="36">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <p id="l-231" class="note">Please consider these questions during your visit the role you were as a non-device holder</p>
+          <p id="l-232"><strong>9. During your visit as non-device holder, did you miss having the device in your possession so that you could explore it in a better way?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-233" type="radio" name="37" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-234" type="radio" name="37" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-235" type="radio" name="37" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-236" type="radio" name="37" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-237" type="radio" name="37" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-238"><strong>9.1 During your visit as non-device holder, did you find natural the interaction between the augmented content and the environment?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-239" type="radio" name="38" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-240" type="radio" name="38" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-241" type="radio" name="38" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-242" type="radio" name="38" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-243" type="radio" name="38" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-244"><strong>9.2 As a partner of the device holder did you feel distracted from focusing on the museum?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-245" type="radio" name="39" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-246" type="radio" name="39" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-247" type="radio" name="39" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-248" type="radio" name="39" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-249" type="radio" name="39" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p id="l-250"><strong>9.3 During your visit as non-device holder, did you feel eager to hold the device when you saw your partner holding the device?</strong></p>
+          <div class="col5">
+            <label>
+              <input id="l-251" type="radio" name="40" id="inlineRadio1" value="1" ><span>1</span><span>Strongly disagree</span>
+            </label>
+            <label>
+              <input id="l-252" type="radio" name="40" id="inlineRadio2" value="2"><span>2</span><span>Disagree somewhat</span>
+            </label>
+            <label>
+              <input id="l-253" type="radio" name="40" id="inlineRadio3" value="3"><span>3</span><span>Neither agree nor disagree</span>
+            </label>
+            <label>
+              <input id="l-254" type="radio" name="40" id="inlineRadio2" value="4"><span>4</span><span>Agree somewhat</span>
+            </label>
+            <label>
+              <input id="l-255" type="radio" name="40" id="inlineRadio3" value="5"><span>5</span><span>Strongly agree</span>
+            </label>
+          </div>
+          <p style="display:none" id="l-256"><strong>9.4 Check if questions correct.</strong></p>
+          <div style="display:none" class="col5">
+            <label>
+              <input checked id="l-257" type="radio" name="41" value="Correct"><span>1</span><span>Check questions</span>
+            </label>
+          </div>
+        </div>
+        <a id="submit-questions" class="btn btn-primary btn-md" href="#" role="button">Next</a>
+        <button id="submit-questions-real" class="btn btn-primary btn-md" href="#" role="button">Submit</button>
+      </div>
+    </div>
+  </form>
+  <footer >
+    <nav class="navbar navbar-light bg-lightgray">
+      <div class="container-fluid">
+        <p id="l-258" class="footer-footer text-right py-3">Loza Tadesse, Paul Hine, Narcis Pares, University Pompeu Fabra – UPF-WaS 2021-2022
+        </p>
+    </nav>
+    </div>
+    </footer>
+</body>
+</html>

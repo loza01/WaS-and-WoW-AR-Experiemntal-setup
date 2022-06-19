@@ -1,0 +1,147 @@
+
+.home {
+    height: 100vh;
+    margin: 0;
+
+}
+
+.jumbotron {
+    padding: 5%;
+    border-radius: 10px;
+    margin: 5%;
+    clear: both;
+}
+
+.jumbotron.questions {
+    padding: 1%;
+}
+
+.navbar {
+    margin-right: 0;
+}
+
+.navbar img {
+    height: 45px;
+    padding-left: 5px;
+}
+
+@media(max-width: 768px) {
+    .navbar img {
+        height: 35px;
+    }
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.col5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+/*.col5::before {
+    content: '';
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}*/
+
+.col5 label {
+    text-align: center;
+}
+
+label {
+    font-weight: normal;
+}
+
+label span {
+    display: block;
+    font-size: 11px;
+}
+
+@media(max-width: 768px) {
+    label span {
+        font-size: 11px;
+    }
+}
+
+.btn {
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.col-sm-6.col-sm-offset-3 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+@media(max-width: 768px) {
+    .col-sm-6.col-sm-offset-3 {
+        padding: 5%;
+        margin: 0 30px 0 30px;
+    }
+}
+
+.note {
+    font-size: 13px;
+    margin-top: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #E7ECFE;
+}
+
+.body-content {
+    padding: 2% 6%;
+    text-align: justify;
+}
+
+.list-group {
+    text-align: left;
+    margin-left: 12%;
+}
+
+.jumbotron ul {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.flag-language-brit {
+    width: 42px;
+    height: 23px;
+    background: url(../img/british_flag.png) no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+.flag-language-spa {
+    width: 42px;
+    height: 25px;
+    background: url(../img/spanish_flag.png) no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+
+.flag-language-brit:hover {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.flag-language-spa:hover {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.flag-language-cat:hover {
+    border: 1px solid black;
+    border-radius: 2px;
+}
